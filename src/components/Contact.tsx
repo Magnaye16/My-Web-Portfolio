@@ -1,3 +1,12 @@
+/** @jsxRuntime classic */
+/** @jsx React.createElement */
+/** @jsxFrag React.Fragment */
+declare namespace JSX {
+  interface IntrinsicElements {
+    [elemName: string]: any;
+  }
+}
+
 import React, { useState } from "react";
 import { Mail, Copy, Check, Send, Sparkles, MapPin, Clock, MessageSquare } from "lucide-react";
 import { PORTFOLIO_INFO } from "../data/portfolioData";
